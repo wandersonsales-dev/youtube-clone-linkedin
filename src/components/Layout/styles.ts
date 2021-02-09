@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
   @media(min-width: 1180px){
-    .left-column, ..right-column {
+    .left-column, .right-column {
       display: unset;
     }
 
