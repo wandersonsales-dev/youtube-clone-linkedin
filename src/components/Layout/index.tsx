@@ -15,7 +15,7 @@ const Layout: React.FC = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      // setIsLoading(false);
+      setIsLoading(false);
     }, 1000)
   }, []);
   
@@ -25,7 +25,7 @@ const Layout: React.FC = () => {
       <DesktopHeader />
 
       <span>
-        <AdBanner />
+        {!isLoading && <AdBanner />}
       </span>
 
       <main>
